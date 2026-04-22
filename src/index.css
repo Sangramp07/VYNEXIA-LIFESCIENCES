@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #0056b3;
+  --color-primary-dark: #004494;
+  --color-primary-light: #e6f0ff;
+  
+  --color-secondary: #28a745;
+  --color-secondary-dark: #218838;
+  --color-secondary-light: #e9f7ef;
+  
+  --color-medical-blue: #0056b3;
+  --color-medical-green: #28a745;
+  --color-medical-gray: #6c757d;
+  --color-medical-light: #f8f9fa;
+  
+  --font-sans: "Inter", "Poppins", ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+@layer base {
+  body {
+    @apply text-slate-900 bg-white font-sans;
+  }
+}
+
+@layer components {
+  .btn {
+    @apply px-6 py-3 rounded-full font-semibold transition-all duration-300 inline-flex items-center justify-center cursor-pointer;
+  }
+  .btn-primary {
+    @apply bg-primary text-white hover:bg-primary-dark shadow-lg hover:shadow-primary/30;
+  }
+  .btn-secondary {
+    @apply bg-secondary text-white hover:bg-secondary-dark shadow-lg hover:shadow-secondary/30;
+  }
+  .btn-outline {
+    @apply border-2 border-primary text-primary hover:bg-primary hover:text-white;
+  }
+  
+  .section-padding {
+    @apply py-20 px-4 md:px-8;
+  }
+  
+  .card {
+    @apply bg-white rounded-2xl shadow-md hover:shadow-xl transition-shadow duration-300 overflow-hidden border border-slate-100;
+  }
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  @apply bg-slate-100;
+}
+::-webkit-scrollbar-thumb {
+  @apply bg-primary/40 rounded-full hover:bg-primary/60 transition-colors;
+}
+
+html {
+  scroll-behavior: smooth;
+}
