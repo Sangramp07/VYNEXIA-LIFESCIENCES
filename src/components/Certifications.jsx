@@ -2,10 +2,10 @@ import React from 'react';
 import { motion } from 'framer-motion';
 
 const certificates = [
-  { name: 'ISO 9001:2015', icon: 'https://www.svgrepo.com/show/303212/iso-9001-logo.svg' },
-  { name: 'WHO-GMP', icon: 'https://www.svgrepo.com/show/447385/certificate.svg' },
-  { name: 'FSSAI', icon: 'https://www.svgrepo.com/show/447385/certificate.svg' },
-  { name: 'Drug License', icon: 'https://www.svgrepo.com/show/447385/certificate.svg' }
+  { name: 'ISO 9001:2015'  }, //icon: 'https://www.svgrepo.com/show/303212/iso-9001-logo.svg'
+  { name: 'WHO-GMP' }, //, icon: 'https://www.svgrepo.com/show/447385/certificate.svg'
+  { name: 'FSSAI' }, //, icon: 'https://www.svgrepo.com/show/447385/certificate.svg'
+  { name: 'Drug License'} //, icon: 'https://www.svgrepo.com/show/447385/certificate.svg' 
 ];
 
 const Certifications = () => {

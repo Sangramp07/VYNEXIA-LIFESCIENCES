@@ -7,10 +7,10 @@ import companyInfo from '../data/companyInfo.json';
 const blogPosts = [
   {
     id: 1,
-    title: "Vynexia Lifesciences Expands Manufacturing Capacity for 2026",
-    excerpt: "To meet the growing global demand, we have recently expanded our state-of-the-art manufacturing facility in Pune, adding new automated lines for capsules and syrups.",
-    date: "April 15, 2026",
-    image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?q=80&w=800&auto=format&fit=crop",
+    title: "Vynexia Lifesciences Expands ",
+    excerpt: "we have recently expanded our manufacturing facility in Pune",
+    date: "  2026",
+    // image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?q=80&w=800&auto=format&fit=crop",
     category: "Company News"
   },
   // {
