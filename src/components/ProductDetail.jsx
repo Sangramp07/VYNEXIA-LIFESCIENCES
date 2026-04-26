@@ -7,10 +7,10 @@ import products from '../data/products.json';
 const allImages = import.meta.glob('../assets/**/*.png', { eager: true, import: 'default' });
 
 const ProductDetail = () => {
-  const { id } = useParams();
+  const { name } = useParams();
   const [language, setLanguage] = useState('English');
   
-  const product = products.find(p => p.id === parseInt(id));
+  const product = products.find(p => p.assetFolder?.toLowerCase() === name?.toLowerCase());
 
   if (!product) {
     return (

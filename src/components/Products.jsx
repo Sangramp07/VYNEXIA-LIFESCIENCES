@@ -104,7 +104,7 @@ const Products = () => {
                   <p className="text-slate-600 text-sm mb-6 flex-grow">{product.description}</p>
                   <div className="flex flex-col gap-3 mt-auto">
                     <Link
-                      to={`/product/${product.id}`}
+                      to={`/products/${product.assetFolder.toLowerCase()}`}
                       className="btn btn-primary text-xs py-2 w-full flex items-center justify-center font-bold"
                     >
                       View Details

@@ -95,7 +95,7 @@ function App() {
           <Navbar />
           <Routes>
             <Route path="/" element={<Home />} />
-            <Route path="/product/:id" element={<ProductDetail />} />
+            <Route path="/products/:name" element={<ProductDetail />} />
           </Routes>
           <Footer />
           <FloatingButtons />
