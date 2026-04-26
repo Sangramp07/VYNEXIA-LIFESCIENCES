@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { ArrowLeft } from 'lucide-react';
 import products from '../data/products.json';
@@ -9,6 +9,10 @@ const allImages = import.meta.glob('../assets/**/*.png', { eager: true, import: 
 const ProductDetail = () => {
   const { name } = useParams();
   const [language, setLanguage] = useState('English');
+  
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [name]);
   
   const product = products.find(p => p.assetFolder?.toLowerCase() === name?.toLowerCase());
 
