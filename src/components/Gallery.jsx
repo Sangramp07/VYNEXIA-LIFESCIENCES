@@ -3,7 +3,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { X, ZoomIn } from 'lucide-react';
 
 const galleryImages = [
-  { id: 1, src: "https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?q=80&w=800&auto=format&fit=crop", alt: "Laboratory Research", category: "Facility" },
+  // { id: 1, src: "https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?q=80&w=800&auto=format&fit=crop", alt: "Laboratory Research", category: "Facility" },
   // { id: 2, src: "https://images.unsplash.com/photo-1530497610245-94d3c16cda28?q=80&w=800&auto=format&fit=crop", alt: "Quality Testing", category: "Lab" },
   // { id: 3, src: "https://images.unsplash.com/photo-1579152276502-545a24b88c31?q=80&w=800&auto=format&fit=crop", alt: "Manufacturing Process", category: "Production" },
   // { id: 4, src: "https://images.unsplash.com/photo-1616671276441-2f2c277b8bf4?q=80&w=800&auto=format&fit=crop", alt: "Packaging Line", category: "Packaging" },

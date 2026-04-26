@@ -13,9 +13,8 @@ const Footer = () => {
           {/* Brand Info */}
           <div className="space-y-6">
             <div className="flex items-center">
-              <a href="#home" className="text-2xl font-bold flex flex-col leading-none">
-                <span className="text-primary">VYNEXIA</span>
-                <span className="text-xs tracking-widest text-secondary">LIFESCIENCES</span>
+              <a href="/#home" className="flex items-center">
+                <img src="/logo.png" alt="Vynexia Lifesciences" className="h-16 object-contain" />
               </a>
             </div>
             <p className="text-sm leading-relaxed">
@@ -41,11 +40,11 @@ const Footer = () => {
           <div>
             <h4 className="text-slate-900 font-bold text-lg mb-6">Quick Links</h4>
             <ul className="space-y-4 text-sm">
-              <li><a href="#home" className="hover:text-secondary transition-colors">Home</a></li>
-              <li><a href="#about" className="hover:text-secondary transition-colors">About Us</a></li>
-              <li><a href="#products" className="hover:text-secondary transition-colors">Our Products</a></li>
-              <li><a href="#services" className="hover:text-secondary transition-colors">Our Services</a></li>
-              <li><a href="#certifications" className="hover:text-secondary transition-colors">Certifications</a></li>
+              <li><a href="/#home" className="hover:text-secondary transition-colors">Home</a></li>
+              <li><a href="/#about" className="hover:text-secondary transition-colors">About Us</a></li>
+              <li><a href="/#products" className="hover:text-secondary transition-colors">Our Products</a></li>
+              <li><a href="/#services" className="hover:text-secondary transition-colors">Our Services</a></li>
+              <li><a href="/#certifications" className="hover:text-secondary transition-colors">Certifications</a></li>
             </ul>
           </div>
 

@@ -1,8 +1,12 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Search, Filter, ExternalLink } from 'lucide-react';
+import { Link } from 'react-router-dom';
 import products from '../data/products.json';
 import companyInfo from '../data/companyInfo.json';
+
+// Eagerly import all images from the products folder to support local asset paths
+const localThumbnails = import.meta.glob('../assets/products/*', { eager: true, import: 'default' });
 
 const Categories = ['All', 'Tablets'];
 
@@ -16,6 +20,15 @@ const Products = () => {
                           product.description.toLowerCase().includes(searchTerm.toLowerCase());
     return matchesCategory && matchesSearch;
   });
+
+  const getImageUrl = (imagePath) => {
+    if (!imagePath) return '';
+    if (imagePath.startsWith('http')) return imagePath;
+    
+    // Match "./assets/..." with the glob keys "../assets/..."
+    const key = imagePath.replace('./', '../');
+    return localThumbnails[key] || imagePath;
+  };
 
   return (
     <section id="products" className="section-padding">
@@ -74,13 +87,13 @@ const Products = () => {
                 transition={{ duration: 0.3 }}
                 className="card group h-full flex flex-col"
               >
-                <div className="h-64 overflow-hidden relative">
+                <div className="h-64 overflow-hidden relative bg-slate-50 p-6 flex items-center justify-center rounded-t-2xl">
                   <img 
-                    src={product.image} 
+                    src={getImageUrl(product.image)} 
                     alt={product.name}
-                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                    className="max-w-full max-h-full object-contain group-hover:scale-110 transition-transform duration-500"
                   />
-                  <div className="absolute top-4 left-4">
+                  <div className="absolute top-4 left-4 z-10">
                     <span className="bg-white/90 backdrop-blur-sm text-primary text-xs font-bold px-3 py-1 rounded-full shadow-sm">
                       {product.category}
                     </span>
@@ -89,15 +102,23 @@ const Products = () => {
                 <div className="p-6 flex flex-col flex-grow">
                   <h4 className="text-xl font-bold text-slate-900 mb-2">{product.name}</h4>
                   <p className="text-slate-600 text-sm mb-6 flex-grow">{product.description}</p>
-                  <a 
-                    href={`https://wa.me/${companyInfo.contact.whatsapp}?text=I am interested in ${product.name}`}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="btn btn-outline text-xs py-2 w-full flex items-center justify-center gap-2"
-                  >
-                    Enquire Now
-                    <ExternalLink size={14} />
-                  </a>
+                  <div className="flex flex-col gap-3 mt-auto">
+                    <Link
+                      to={`/product/${product.id}`}
+                      className="btn btn-primary text-xs py-2 w-full flex items-center justify-center font-bold"
+                    >
+                      View Details
+                    </Link>
+                    <a 
+                      href={`https://wa.me/${companyInfo.contact.whatsapp}?text=I am interested in ${product.name}`}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="btn btn-outline text-xs py-2 w-full flex items-center justify-center gap-2"
+                    >
+                      Enquire Now
+                      <ExternalLink size={14} />
+                    </a>
+                  </div>
                 </div>
               </motion.div>
             ))}

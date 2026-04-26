@@ -3,6 +3,7 @@ import { motion } from 'framer-motion';
 import { Calendar, ArrowRight, Share2 } from 'lucide-react';
 import { FaFacebook, FaTwitter, FaLinkedin } from 'react-icons/fa';
 import companyInfo from '../data/companyInfo.json';
+import image from '../assets/products/22.webp';
 
 const blogPosts = [
   {
@@ -10,7 +11,7 @@ const blogPosts = [
     title: "Vynexia Lifesciences Expands ",
     excerpt: "we have recently expanded our manufacturing facility in Pune",
     date: "  2026",
-    // image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?q=80&w=800&auto=format&fit=crop",
+    image: image,
     category: "Company News"
   },
   // {

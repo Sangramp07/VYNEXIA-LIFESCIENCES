@@ -15,14 +15,14 @@ const Navbar = () => {
   }, []);
 
   const navLinks = [
-    { name: 'Home', href: '#home' },
-    { name: 'About Us', href: '#about' },
-    { name: 'Products', href: '#products' },
-    { name: 'Gallery', href: '#gallery' },
-    { name: 'Services', href: '#services' },
-    { name: 'Certifications', href: '#certifications' },
-    { name: 'Blog', href: '#blog' },
-    { name: 'Contact Us', href: '#contact' },
+    { name: 'Home', href: '/#home' },
+    { name: 'About Us', href: '/#about' },
+    { name: 'Products', href: '/#products' },
+    { name: 'Gallery', href: '/#gallery' },
+    { name: 'Services', href: '/#services' },
+    { name: 'Certifications', href: '/#certifications' },
+    { name: 'Blog', href: '/#blog' },
+    { name: 'Contact Us', href: '/#contact' },
   ];
 
   return (
@@ -51,9 +51,12 @@ const Navbar = () => {
         <div className="container mx-auto px-4 md:px-8 flex justify-between items-center">
           {/* Logo */}
         <div className="flex items-center">
-          <a href="#home" className="text-2xl font-bold flex flex-col leading-none">
-            <span className={scrolled ? 'text-primary' : 'text-primary'}>VYNEXIA</span>
-            <span className={`text-xs tracking-widest ${scrolled ? 'text-secondary' : 'text-secondary'}`}>LIFESCIENCES</span>
+          <a href="/#home" className="flex items-center">
+            <img 
+              src="/logo.png" 
+              alt="Vynexia Lifesciences" 
+              className={`transition-all duration-300 object-contain ${scrolled ? 'h-14' : 'h-20'}`} 
+            />
           </a>
         </div>
 
@@ -68,7 +71,7 @@ const Navbar = () => {
               {link.name}
             </a>
           ))}
-          <a href="#contact" className="btn btn-primary text-sm py-2 px-6">
+          <a href="/#contact" className="btn btn-primary text-sm py-2 px-6">
             Enquire Now
           </a>
         </div>
@@ -94,7 +97,7 @@ const Navbar = () => {
               {link.name}
             </a>
           ))}
-          <a href="#contact" onClick={() => setIsOpen(false)} className="btn btn-primary w-full">
+          <a href="/#contact" onClick={() => setIsOpen(false)} className="btn btn-primary w-full">
             Enquire Now
           </a>
         </div>

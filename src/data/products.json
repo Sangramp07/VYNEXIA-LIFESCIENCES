@@ -1,9 +1,18 @@
 [
   {
     "id": 1,
-    "name": "Vynexia-Cold Tab",
+    "name": "Shatavyn Tab",
     "category": "Tablets",
-    "description": "Relief from common cold, nasal congestion, and headache.",
-    "image": "https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?q=80&w=800&auto=format&fit=crop"
+    "description": "Supporting Natural Lactation & Meternal Wellness",
+    "image": "./assets/products/Shatavyn_Packaging.webp",
+    "assetFolder": "SHATAVYN"
+  },
+  {
+    "id": 2,
+    "name": "Myoonari DUO Capsules",
+    "category": "Tablets",
+    "description": "Advanced Nutritional Support For PCOS/PCOD Management ,Hormonal balance, Fertility Support & Women's Wellness",
+    "image": "./assets/products/Myoonari_Packaging.webp",
+    "assetFolder": "MYOONARI"
   }
 ]
