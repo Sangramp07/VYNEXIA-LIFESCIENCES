@@ -2,6 +2,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { CheckCircle2, ShieldCheck, Target, Eye } from 'lucide-react';
 import companyInfo from '../data/companyInfo.json';
+import aboutBg from '../assets/background/aboutbg.jpg';
 
 const About = () => {
   return (
@@ -18,7 +19,7 @@ const About = () => {
           >
             <div className="relative z-10 rounded-2xl overflow-hidden shadow-2xl">
               <img 
-                src="https://images.unsplash.com/photo-1576086213369-97a306d36557?q=80&w=800&auto=format&fit=crop" 
+                src={aboutBg} 
                 alt="Healthcare Professional" 
                 className="w-full h-full object-cover"
               />
