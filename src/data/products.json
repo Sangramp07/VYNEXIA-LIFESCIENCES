@@ -2,7 +2,7 @@
   {
     "id": 1,
     "name": "Shatavyn Tab",
-    "category": "Tablets",
+    "category": "Capsules",
     "description": "Supporting Natural Lactation & Meternal Wellness",
     "image": "./assets/products/Shatavyn_Packaging.webp",
     "assetFolder": "SHATAVYN"
@@ -14,5 +14,29 @@
     "description": "Advanced Nutritional Support For PCOS/PCOD Management ,Hormonal balance, Fertility Support & Women's Wellness",
     "image": "./assets/products/Myoonari_Packaging.webp",
     "assetFolder": "MYOONARI"
+  },
+  {
+    "id": 3,
+    "name": "Folnexia-DHA",
+    "category": "Tablets",
+    "description": "Comprehensive nutritional support for pregnancy, promoting optimal fetal brain and eye development while preventing neural tube defects.",
+    "image": "./assets/products/Folnexia-dha.jpeg",
+    "assetFolder": "FOLNEXIA_DHA"
+  },
+  {
+    "id": 4,
+    "name": "Vyn-D3-60K",
+    "category": "Capsules",
+    "description": "High-dose Vitamin D3 supplement for building strong bones, enhancing calcium absorption, and supporting a healthy immune system.",
+    "image": "./assets/products/vyn-d3-60k.jpeg",
+    "assetFolder": "VYN_D3_60K"
+  },
+  {
+    "id": 5,
+    "name": "ARGENOOX Sachet",
+    "category": "Sachets",
+    "description": "Premium L-Arginine based supplement designed to improve placental circulation, support healthy blood pressure, and promote optimal fetal growth.",
+    "image": "./assets/products/argenox.jpeg",
+    "assetFolder": "ARGENOOX"
   }
 ]

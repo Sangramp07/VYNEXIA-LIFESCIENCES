@@ -2,6 +2,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { ArrowRight, ChevronRight } from 'lucide-react';
 import companyInfo from '../data/companyInfo.json';
+import homeBg from '../assets/background/homebg.jpg';
 
 const Hero = () => {
   return (
@@ -9,8 +10,8 @@ const Hero = () => {
       {/* Background Image with Overlay */}
       <div className="absolute inset-0 z-0">
         <img 
-          src="https://images.unsplash.com/photo-1579165466541-74e21495804c?q=80&w=2000&auto=format&fit=crop" 
-          alt="Pharmaceutical Lab" 
+          src={homeBg} 
+          alt="Vynexia Lifesciences Background" 
           className="w-full h-full object-cover"
         />
         <div className="absolute inset-0 bg-gradient-to-r from-white via-white/90 to-transparent"></div>

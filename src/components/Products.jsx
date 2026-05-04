@@ -8,7 +8,7 @@ import companyInfo from '../data/companyInfo.json';
 // Eagerly import all images from the products folder to support local asset paths
 const localThumbnails = import.meta.glob('../assets/products/*', { eager: true, import: 'default' });
 
-const Categories = ['All', 'Tablets'];
+const Categories = ['All', ...new Set(products.map(p => p.category))];
 
 const Products = () => {
   const [activeCategory, setActiveCategory] = useState('All');
