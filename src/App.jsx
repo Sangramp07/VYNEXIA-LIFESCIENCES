@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { HelmetProvider, Helmet } from 'react-helmet-async';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
+import Philosophy from './components/Philosophy';
 import About from './components/About';
 import Products from './components/Products';
 import Services from './components/Services';
@@ -19,12 +20,12 @@ import companyInfo from './data/companyInfo.json';
 const Home = () => (
   <main>
     <Hero />
+    <Philosophy />
     <About />
     <Services />
     <Products />
-    
-    <Certifications />
     <Blog />
+    <Certifications />
     <Contact />
   </main>
 );

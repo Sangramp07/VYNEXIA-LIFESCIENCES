@@ -26,7 +26,7 @@ const Navbar = () => {
   ];
 
   return (
-    <header className="fixed w-full z-50 transition-all duration-300">
+    <header className="absolute w-full z-50 transition-all duration-300">
       {/* Top Bar */}
       <div className={`hidden md:block bg-slate-900 text-white py-2 transition-all duration-300 ${scrolled ? 'h-0 opacity-0 overflow-hidden py-0' : 'opacity-100'}`}>
         <div className="container mx-auto px-4 md:px-8 flex justify-between items-center text-xs">

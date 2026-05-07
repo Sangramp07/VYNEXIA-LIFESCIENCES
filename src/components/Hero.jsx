@@ -2,7 +2,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { ArrowRight, ChevronRight } from 'lucide-react';
 import companyInfo from '../data/companyInfo.json';
-import homeBg from '../assets/background/homebg.jpg';
+import homebg2 from '../assets/background/homebg2.jpg';
 
 const Hero = () => {
   return (
@@ -10,7 +10,7 @@ const Hero = () => {
       {/* Background Image with Overlay */}
       <div className="absolute inset-0 z-0">
         <img 
-          src={homeBg} 
+          src={homebg2} 
           alt="Vynexia Lifesciences Background" 
           className="w-full h-full object-cover"
         />
